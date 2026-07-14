@@ -10,9 +10,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <img src="1000097706.jpg" alt="Profile of Jonard Roselo">
-  <img src="profile.jpg" alt="Jonard Roselo" style="width: 200px; height: 200px; border-radius: 50%;">
+  <img src="profile.jpg" alt="Jonard Roselo" class="profile-pic">
 <style>
     /* Google Font */
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* This keeps the image from looking stretched */
+}
+
     *{
         margin:0;
         padding:0;
