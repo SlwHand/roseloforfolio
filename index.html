@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jonard Roselo | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f8f8ff;
+color:#333;
+
+}
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:32px;
+font-weight:700;
+
+}
+
+.logo span{
+
+color:#7c3aed;
+
+}
+
+nav a{
+
+text-decoration:none;
+margin-left:25px;
+font-weight:500;
+color:#333;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#7c3aed;
+
+}
+
+.hero{
+
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:120px 10%;
+gap:60px;
+
+}
+
+.hero-text{
+
+flex:1;
+
+}
+
+.hero-text h3{
+
+font-size:24px;
+color:#7c3aed;
+
+}
+
+.hero-text h1{
+
+font-size:60px;
+margin:10px 0;
+
+}
+
+.hero-text h2{
+
+color:#666;
+height:40px;
+
+}
+
+.hero-text p{
+
+margin:20px 0;
+max-width:500px;
+
+}
+
+.buttons{
+
+display:flex;
+gap:20px;
+
+}
+
+.buttons a{
+
+text-decoration:none;
+padding:14px 28px;
+border-radius:30px;
+background:#7c3aed;
+color:white;
+font-weight:600;
+transition:.3s;
+
+}
+
+.buttons a:hover{
+
+transform:translateY(-5px);
+
+}
+
+.btn2{
+
+background:transparent;
+border:2px solid #7c3aed;
+color:#7c3aed;
+
+}
+
+.hero-image{
+
+flex:1;
+display:flex;
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:350px;
+height:350px;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #e9d5ff;
+box-shadow:0 0 40px rgba(124,58,237,.3);
+
+}
+
+section{
+
+padding:100px 10%;
+
+}
+
+section h2{
+
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+color:#7c3aed;
+
+}
+
+#about p{
+
+max-width:800px;
+margin:auto;
+text-align:center;
+font-size:18px;
+
+}
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+
+}
+
+.skill{
+
+background:white;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.skill:hover{
+
+transform:translateY(-10px);
+
+}
+
+.skill i{
+
+font-size:50px;
+margin-bottom:15px;
+color:#7c3aed;
+
+}
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.project{
+
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.project:hover{
+
+transform:translateY(-10px);
+
+}
+
+.project h3{
+
+color:#7c3aed;
+margin-bottom:15px;
+
+}
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+Jonard<span>.</span>
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Jonard Roselo</h1>
+
+<h2></h2>
+
+<p>
+
+Bachelor of Science in Computer Science student passionate about Web Development, Oracle SQL, UI Design and building modern systems.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects">My Projects</a>
+
+<a href="#contact" class="btn2">Contact Me</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="1000097712.jpg" alt="Jonard Roselo">
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am currently studying Bachelor of Science in Computer Science at Northwestern Visayan Colleges. I enjoy creating websites, learning new technologies, and developing systems that solve real-world problems.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<i class="fab fa-html5"></i>
+<h3>HTML5</h3>
+</div>
+
+<div class="skill">
+<i class="fab fa-css3-alt"></i>
+<h3>CSS3</h3>
+</div>
+
+<div class="skill">
+<i class="fab fa-js"></i>
+<h3>JavaScript</h3>
+</div>
+
+<div class="skill">
+<i class="fas fa-database"></i>
+<h3>Oracle SQL</h3>
+</div>
+
+<div class="skill">
+<i class="fas fa-code"></i>
+<h3>Responsive Design</h3>
+</div>
+
+<div class="skill">
+<i class="fas fa-palette"></i>
+<h3>UI Design</h3>
+</div>
+
+</div>
+
+</section>
+  
+  <!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>🏥 Health Center Management System</h3>
+<p>
+A web-based system for appointment booking, patient records, and healthcare management.
+</p>
+</div>
+
+<div class="project">
+<h3>🎓 Student Grading System</h3>
+<p>
+Oracle SQL database project for managing student records and grades.
+</p>
+</div>
+
+<div class="project">
+<h3>📚 Research Study</h3>
+<p>
+Learning Experiences of Computer Science Students with Limited Access to Technological Devices.
+</p>
+</div>
+
+<div class="project">
+<h3>💻 Personal Portfolio</h3>
+<p>
+A responsive personal portfolio website using HTML, CSS, and JavaScript.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="6" placeholder="Write your message..." required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Jonard Roselo | All Rights Reserved</p>
+
+</footer>
+  
+  /* CONTACT */
+
+form{
+
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+form input,
+form textarea{
+
+padding:15px;
+font-size:16px;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+
+}
+
+form button{
+
+padding:15px;
+background:#7c3aed;
+color:white;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+
+}
+
+form button:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* FOOTER */
+
+footer{
+
+background:#7c3aed;
+color:white;
+text-align:center;
+padding:25px;
+
+}
+
+/* ANIMATION */
+
+.hidden{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+.hero{
+
+flex-direction:column-reverse;
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:250px;
+height:250px;
+
+}
+
+.hero-text h1{
+
+font-size:42px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+}
+
+}
+  
+  <script>
+
+// =========================
+// Smooth Scrolling
+// =========================
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+// =========================
+// Header Shadow
+// =========================
+
+const header=document.querySelector("header");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>50){
+
+header.style.boxShadow="0 5px 20px rgba(0,0,0,.15)";
+
+}else{
+
+header.style.boxShadow="0 2px 15px rgba(0,0,0,.08)";
+
+}
+
+});
+
+// =========================
+// Scroll Reveal Animation
+// =========================
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},{threshold:.2});
+
+document.querySelectorAll("section").forEach(sec=>{
+
+sec.classList.add("hidden");
+
+observer.observe(sec);
+
+});
+
+// =========================
+// Typing Effect
+// =========================
+
+const words=[
+
+"Computer Science Student",
+
+"Web Developer",
+
+"Oracle SQL Learner",
+
+"Future Full Stack Developer"
+
+];
+
+let wordIndex=0;
+
+let charIndex=0;
+
+let deleting=false;
+
+const typing=document.querySelector(".hero-text h2");
+
+function type(){
+
+const current=words[wordIndex];
+
+if(!deleting){
+
+typing.textContent=current.substring(0,charIndex++);
+
+if(charIndex>current.length){
+
+deleting=true;
+
+setTimeout(type,1500);
+
+return;
+
+}
+
+}else{
+
+typing.textContent=current.substring(0,charIndex--);
+
+if(charIndex<0){
+
+deleting=false;
+
+wordIndex++;
+
+if(wordIndex>=words.length){
+
+wordIndex=0;
+
+}
+
+}
+
+}
+
+setTimeout(type,deleting?50:100);
+
+}
+
+type();
+
+// =========================
+// Contact Form
+// =========================
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for contacting me!");
+
+this.reset();
+
+});
+
+// =========================
+// Back To Top Button
+// =========================
+
+const topBtn=document.createElement("button");
+
+topBtn.innerHTML="<i class='fas fa-arrow-up'></i>";
+
+document.body.appendChild(topBtn);
+
+topBtn.style.position="fixed";
+topBtn.style.bottom="25px";
+topBtn.style.right="25px";
+topBtn.style.width="55px";
+topBtn.style.height="55px";
+topBtn.style.borderRadius="50%";
+topBtn.style.border="none";
+topBtn.style.background="#7c3aed";
+topBtn.style.color="#fff";
+topBtn.style.fontSize="22px";
+topBtn.style.cursor="pointer";
+topBtn.style.display="none";
+topBtn.style.boxShadow="0 5px 20px rgba(0,0,0,.25)";
+topBtn.style.transition=".3s";
+topBtn.style.zIndex="999";
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>400){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+// =========================
+// Dark Mode Button
+// =========================
+
+const darkBtn=document.createElement("button");
+
+darkBtn.innerHTML="<i class='fas fa-moon'></i>";
+
+document.body.appendChild(darkBtn);
+
+darkBtn.style.position="fixed";
+darkBtn.style.bottom="95px";
+darkBtn.style.right="25px";
+darkBtn.style.width="55px";
+darkBtn.style.height="55px";
+darkBtn.style.borderRadius="50%";
+darkBtn.style.border="none";
+darkBtn.style.background="#111827";
+darkBtn.style.color="#fff";
+darkBtn.style.cursor="pointer";
+darkBtn.style.fontSize="20px";
+darkBtn.style.boxShadow="0 5px 20px rgba(0,0,0,.25)";
+darkBtn.style.zIndex="999";
+
+let dark=false;
+
+darkBtn.onclick=function(){
+
+dark=!dark;
+
+if(dark){
+
+document.body.style.background="#111827";
+document.body.style.color="#fff";
+
+document.querySelectorAll(".skill,.project").forEach(card=>{
+
+card.style.background="#1f2937";
+card.style.color="#fff";
+
+});
+
+document.querySelector("header").style.background="#1f2937";
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.style.color="#fff";
+
+});
+
+}else{
+
+location.reload();
+
+}
+
+};
+
+</script>
+
+</body>
+</html>
